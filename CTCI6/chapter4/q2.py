@@ -11,8 +11,10 @@ def makeBST(sorted_arr):
     middle_index = int( len(sorted_arr) / 2 )
     BST.value = sorted_arr[middle_index]
 
-    BST.left = makeBST(sorted_arr[:middle_index])
-    BST.right = makeBST(sorted_arr[middle_index+1:])
+    left = makeBST(sorted_arr[:middle_index])
+    BST.add_left_child(left)
+    right = makeBST(sorted_arr[middle_index+1:])
+    BST.add_right_child(right)
 
     return BST
 
