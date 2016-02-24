@@ -1,6 +1,6 @@
 class BSTNode:
-    def __init__(self, val):
-        self.val = val
+    def __init__(self, value=None):
+        self.value = value
         self.left = None
         self.right = None
 
@@ -10,7 +10,7 @@ class BSTNode:
             return
         else:
             BSTNode.print_tree(node.right, depth+1)
-            print("   "*depth + "[" + str(node.val) + "]")
+            print("   "*depth + "[" + str(node.value) + "]")
             BSTNode.print_tree(node.left, depth+1)
 
 if __name__ == '__main__':

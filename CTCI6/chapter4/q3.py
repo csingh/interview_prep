@@ -11,7 +11,7 @@ def recurser(array, node, depth=1):
     if len(array) < depth:
         array.append(None)
     
-    new_node = LLNode(node.val)
+    new_node = LLNode(node.value)
     new_node.next = array[depth-1]
     array[depth-1] = new_node
 

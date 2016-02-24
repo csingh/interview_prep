@@ -1,6 +1,6 @@
 class LLNode:
-    def __init__(self, val):
-        self.val = val
+    def __init__(self, value):
+        self.value = value
         self.next = None
 
     @staticmethod
@@ -8,7 +8,7 @@ class LLNode:
         if node is None:
             print("-->None")
         else:
-            print("-->[" + str(node.val), end="]")
+            print("-->[" + str(node.value), end="]")
             LLNode.print_list(node.next)
 
 if __name__ == '__main__':
