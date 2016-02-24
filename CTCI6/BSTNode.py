@@ -7,11 +7,16 @@ class BSTNode:
 
     def add_left_child(self, node):
         self.left = node
-        node.parent = self
+        if node is not None:
+            node.parent = self
 
     def add_right_child(self, node):
         self.right = node
-        node.parent = self
+        if node is not None:
+            node.parent = self
+
+    def __str__(self):
+        return str(self.value)
 
     @staticmethod
     def print_tree(node, depth=0):
