@@ -3,6 +3,15 @@ class BSTNode:
         self.value = value
         self.left = None
         self.right = None
+        self.parent = None
+
+    def add_left_child(self, node):
+        self.left = node
+        node.parent = self
+
+    def add_right_child(self, node):
+        self.right = node
+        node.parent = self
 
     @staticmethod
     def print_tree(node, depth=0):
