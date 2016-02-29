@@ -3,6 +3,9 @@ class LLNode:
         self.value = value
         self.next = None
 
+    def __str__(self):
+        return str(self.value)
+
     @staticmethod
     def print_list(node):
         if node is None:
