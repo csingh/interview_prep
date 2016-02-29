@@ -1,5 +1,5 @@
 import sys
-sys.path.insert(0, '/Users/chandeep/workspace/interview_prep/CTCI6/')
+sys.path.insert(0, '/Users/chandeep/workspace/interview_prep/')
 
 from BSTNode import *
 

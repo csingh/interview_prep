@@ -7,7 +7,7 @@
 #         self.next = None
 
 import sys
-sys.path.insert(0, '../CTCI6/')
+sys.path.insert(0, '../')
 from LLNode import *
 
 class Solution(object):
