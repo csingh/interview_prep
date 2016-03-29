@@ -1,5 +1,5 @@
 import sys
-sys.path.insert(0, '/Users/chandeep/workspace/interview_prep/')
+sys.path.insert(0, '../../')
 
 from BSTNode import *
 from LLNode import *

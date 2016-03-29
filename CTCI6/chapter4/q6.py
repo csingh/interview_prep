@@ -1,5 +1,5 @@
 import sys
-sys.path.insert(0, '/Users/chandeep/workspace/interview_prep/CTCI6/chapter4')
+sys.path.insert(0, '../../')
 
 from q2 import *
 
