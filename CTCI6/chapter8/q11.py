@@ -1,7 +1,9 @@
 AVAILABLE_COINS = [25,10,5]
 
 def numWays(n, coins):
+    # dont modify the coins array passed in..
     coins = coins[:]
+
     # can't represent a negative number
     if n < 0: return 0
 
