@@ -1,13 +1,13 @@
 import sys
 sys.path.insert(0, '../../')
 
-from BSTNode import *
+from BTNode import *
 
 def makeBST(sorted_arr):
     if len(sorted_arr) == 0:
         return None
 
-    BST = BSTNode()
+    BST = BTNode()
     middle_index = int( len(sorted_arr) / 2 )
     BST.value = sorted_arr[middle_index]
 
@@ -20,4 +20,4 @@ def makeBST(sorted_arr):
 
 if __name__ == '__main__':
     root = makeBST(range(1,11))
-    BSTNode.print_tree(root)
+    BTNode.print_tree(root)

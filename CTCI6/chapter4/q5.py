@@ -1,7 +1,7 @@
 import sys
 sys.path.insert(0, '../../')
 
-from BSTNode import *
+from BTNode import *
 
 INF = float("inf")
 
@@ -15,29 +15,29 @@ def check_BST(root, min_val=-INF, max_val=INF):
     return current_check and left_check and right_check
 
 if __name__ == '__main__':
-    tree = BSTNode(1)
+    tree = BTNode(1)
 
-    BSTNode.print_tree(tree)
+    BTNode.print_tree(tree)
     print("--------")
     print(str(check_BST(tree)) + "\n\n")
 
-    tree.left = BSTNode(2)
+    tree.left = BTNode(2)
 
-    BSTNode.print_tree(tree)
+    BTNode.print_tree(tree)
     print("--------")
     print(str(check_BST(tree)) + "\n\n")
 
-    tree = BSTNode(2)
-    tree.left = BSTNode(1)
-    tree.right = BSTNode(3)
+    tree = BTNode(2)
+    tree.left = BTNode(1)
+    tree.right = BTNode(3)
 
-    BSTNode.print_tree(tree)
+    BTNode.print_tree(tree)
     print("--------")
     print(str(check_BST(tree)) + "\n\n")
 
-    tree.left.left = BSTNode(0.9)
-    tree.left.right = BSTNode(1)
+    tree.left.left = BTNode(0.9)
+    tree.left.right = BTNode(1)
 
-    BSTNode.print_tree(tree)
+    BTNode.print_tree(tree)
     print("--------")
     print(str(check_BST(tree)) + "\n\n")

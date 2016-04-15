@@ -1,7 +1,7 @@
 import sys
 sys.path.insert(0, '../../')
 
-from BSTNode import *
+from BTNode import *
 from LLNode import *
 
 def recurser(array, node, depth=1):
@@ -24,14 +24,14 @@ def soln(tree):
     return LL_array
 
 if __name__ == '__main__':
-    tree = BSTNode("S")
-    tree.left = BSTNode("L")
-    tree.right = BSTNode("R")
-    tree.left.left = BSTNode("LL")
-    tree.left.right = BSTNode("LR")
-    tree.right.right = BSTNode("RR")
+    tree = BTNode("S")
+    tree.left = BTNode("L")
+    tree.right = BTNode("R")
+    tree.left.left = BTNode("LL")
+    tree.left.right = BTNode("LR")
+    tree.right.right = BTNode("RR")
 
-    BSTNode.print_tree(tree)
+    BTNode.print_tree(tree)
 
     print("--------")
 

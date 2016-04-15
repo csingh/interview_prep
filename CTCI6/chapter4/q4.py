@@ -1,7 +1,7 @@
 import sys
 sys.path.insert(0, '../../')
 
-from BSTNode import *
+from BTNode import *
 
 def check_balanced(root):
 
@@ -13,28 +13,28 @@ def check_balanced(root):
     return (left[1] - right[1] < 2, 1 + max(left[1],right[1]))
 
 if __name__ == '__main__':
-    tree = BSTNode("S")
+    tree = BTNode("S")
 
-    BSTNode.print_tree(tree)
+    BTNode.print_tree(tree)
     print("--------")
     print(str(check_balanced(tree)) + "\n\n")
 
-    tree.left = BSTNode("L")
+    tree.left = BTNode("L")
 
-    BSTNode.print_tree(tree)
+    BTNode.print_tree(tree)
     print("--------")
     print(str(check_balanced(tree)) + "\n\n")
 
-    tree.left.left = BSTNode("LL")
-    tree.left.right = BSTNode("LR")
+    tree.left.left = BTNode("LL")
+    tree.left.right = BTNode("LR")
 
-    BSTNode.print_tree(tree)
+    BTNode.print_tree(tree)
     print("--------")
     print(str(check_balanced(tree)) + "\n\n")
 
-    tree.right = BSTNode("R")
-    tree.right.right = BSTNode("RR")
+    tree.right = BTNode("R")
+    tree.right.right = BTNode("RR")
 
-    BSTNode.print_tree(tree)
+    BTNode.print_tree(tree)
     print("--------")
     print(str(check_balanced(tree)) + "\n\n")
