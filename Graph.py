@@ -3,6 +3,15 @@ class Graph:
         self.adj_dict = dict()
         self.vertices = []
 
+    def get_vertices(self):
+        return self.vertices
+
+    def get_connections(self, src):
+        if src not in self.adj_dict:
+            return []
+        else:
+            return self.adj_dict[src]
+
     def add_directed_edge(self, src_v, dest_v):
         # add vertices to vertices array
         if src_v not in self.vertices:
@@ -20,6 +29,14 @@ class Graph:
     def add_undirected_edge(self, vert_1, vert_2):
         self.add_directed_edge(vert_1, vert_2)
         self.add_directed_edge(vert_2, vert_1)
+
+    def add_mult_directed_edges(self, src, destinations):
+        for dest in destinations:
+            self.add_directed_edge(src, dest)
+
+    def add_mult_undirected_edges(self, src, destinations):
+        for dest in destinations:
+            self.add_undirected_edge(src, dest)
 
     def __str__(self):
         vertices = sorted(self.vertices)
